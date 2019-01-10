@@ -1,0 +1,20 @@
+# Created by: YouLiang
+# Date: Jan 2019
+# Description: End Effector Pose Descriptor for UR10 motion control
+#              The main function for this config file is to check the eef after each motion,
+#              ensure that the eef reaches the intended pose which was requested by ATM               
+#
+# * pose: [x-pos, y-pos, z-pos, roll, pitch, yaw]
+#
+#############################################################
+
+
+arm_id: ur10_001
+pos_tolerance: 0.005
+rot_tolerance: 0.005
+enable_ros2_gripper: False
+pose_id:
+  P1: [0, 0.7854, 1.571,  -0.7854, 1.571, -0.7854]
+  P2: [0, 1.9566, 0.7708, -0.4712, 1.571, -0.7854]
+  P3: [0, 2.854, 1.571,  -0.7854, 1.571, -0.7854]
+  
